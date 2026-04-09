@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { Hono } from 'hono';
 import auth from './auth.js';
 import { prisma } from '../lib/prisma.js';
-import { clearDatabase } from '../../tests/setup/test-db.js';
+import { clearDatabase } from '../tests/setup/test-db.js';
 
 const app = new Hono();
 app.route('/api/auth', auth);

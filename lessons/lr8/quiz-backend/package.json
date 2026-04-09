@@ -9,7 +9,8 @@
     "test:feature": "vitest run src/routes/admin.feature.test.ts src/routes/auth.feature.test.ts src/routes/sessions.feature.test.ts",
     "test": "vitest run \"src/**/*.{unit,feature}.test.ts\"",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.9",
@@ -19,7 +20,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
+    "@types/node": "^20.19.39",
     "@vitest/coverage-v8": "^4.1.1",
     "tsx": "^4.7.1",
     "typescript": "^5.8.3",
